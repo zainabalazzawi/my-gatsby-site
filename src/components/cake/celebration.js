@@ -30,6 +30,7 @@ const CelebrationData = [
 ];
 
 export default function Celebration() {
+  console.log('Hello from Mahmoud!');
   return (
     <Wrapper>
       <CelebrationWrapper>
