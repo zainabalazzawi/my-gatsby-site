@@ -15,7 +15,7 @@ export default function Celebration() {
       <img src="/images/mini/mini-2.png" alt="mini" />
 
       <FormWrapper>
-        <p>quantity</p>
+        <p>Quantity</p>
 
         <button type="button" className="quantity">
           -

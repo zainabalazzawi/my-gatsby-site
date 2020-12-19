@@ -30,7 +30,6 @@ const CelebrationData = [
 ];
 
 export default function Celebration() {
-  console.log('Hello from Mahmoud!');
   return (
     <Wrapper>
       <CelebrationWrapper>
@@ -51,7 +50,7 @@ export default function Celebration() {
 const Wrapper = styled.div`
   position: absolute;
   top: 200px;
-
+  width: 100%;
   img {
     width: 200px;
     height: 150px;
