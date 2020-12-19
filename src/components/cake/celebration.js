@@ -24,7 +24,7 @@ const CelebrationData = [
   {
     title: "Lemon Mousse Cake",
     img: "/images/celebration/celebration-3.png",
-    price: "price: $46.99",
+    price: "price: $50.99",
     link: "/lemon-mousse",
   },
 ];
@@ -51,7 +51,6 @@ export default function Celebration() {
 const Wrapper = styled.div`
   position: absolute;
   top: 200px;
-  width: 100%;
 
   img {
     width: 200px;
