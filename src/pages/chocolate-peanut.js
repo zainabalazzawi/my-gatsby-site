@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Counter from "../components/counter/counter";
 
 export default function Celebration() {
   return (
@@ -14,17 +15,7 @@ export default function Celebration() {
       </TextWrapper>
       <img src="/images/mini/mini-1.png" alt="mini" />
 
-      <FormWrapper>
-        <p>quantity</p>
-
-        <button type="button" className="quantity">
-          -
-        </button>
-        <input type="text" value="1" className="quantity" />
-        <button type="button" className="quantity">
-          +
-        </button>
-      </FormWrapper>
+      <Counter />
       <p className="information">
         PLEASE WRITE YOUR PERSONALIZED MESSAGE BELOW
       </p>
@@ -83,30 +74,7 @@ const TextWrapper = styled.p`
   border-radius: 5px;
   color: #472f09;
 `;
-const FormWrapper = styled.div`
-  position: absolute;
-  right: 100px;
-  top: 250px;
 
-  input {
-    text-align: center;
-    width: 400px;
-    height: 30px;
-    background: #e1b472;
-    border-color: #e1b472;
-  }
-  button {
-    width: 50px;
-    height: 36px;
-    background: #e1b472;
-    border-color: #e1b472;
-  }
-  p {
-    font-size: 20px;
-    color: #472f09;
-    padding: 10px;
-  }
-`;
 const TitleWrapper = styled.h1`
   position: absolute;
   top: 150px;
