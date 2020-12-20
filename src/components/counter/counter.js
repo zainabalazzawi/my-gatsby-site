@@ -1,33 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-export default class Counter extends React.Component {
-  state = {
-    count: 0,
-  };
-
-  increment = () => {
-    this.setState({
-      count: this.state.count + 1,
-    });
-  };
-
-  decrement = () => {
-    this.setState({
-      count: this.state.count - 1,
-    });
-  };
-
-  render() {
-    return (
-      <Wrapper>
-        <QuantityWrapper>quantity</QuantityWrapper>
-        <button onClick={this.decrement}>-</button>
-        <div> {this.state.count}</div>
-        <button onClick={this.increment}>+</button>
-      </Wrapper>
-    );
-  }
+export default function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <Wrapper>
+      <QuantityWrapper>quantity</QuantityWrapper>
+      <button onClick={() => setCount((currentCount) => currentCount - 1)}>
+        -
+      </button>
+      <div> {count}</div>
+      <button onClick={() => setCount((currentCount) => currentCount + 1)}>
+        +
+      </button>
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.div`
