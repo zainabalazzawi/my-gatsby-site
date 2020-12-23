@@ -63,6 +63,8 @@ const CelebrationWrapper = styled.div`
   top: 200px;
   display: grid;
   grid-template-columns: repeat(4, auto);
+  border-bottom: 1px solid #741b47;
+  padding-bottom: 10px;
   gap: 15px;
 `;
 
@@ -75,9 +77,10 @@ const CelebrationItem = styled.div`
   /* grid-template-columns: auto; */
   align-items: center;
   padding: 15px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: 0.5s ease-out;
   color: #741b47;
+
   /* background: #741b47; */
 
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -85,7 +88,8 @@ const CelebrationItem = styled.div`
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px) scale(1.2);
+    transform: translateY(-3px);
+    /* scale(1.2) */
   }
 `;
 

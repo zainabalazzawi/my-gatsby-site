@@ -50,7 +50,7 @@ export default function Mini() {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 600px;
+  top: 500px;
   width: 100%;
   img {
     width: 200px;
@@ -74,7 +74,6 @@ const MiniItem = styled.div`
   /* grid-template-columns: auto; */
   align-items: center;
   padding: 15px;
-  border-radius: 10px;
   transition: 0.5s ease-out;
   color: #741b47;
   /* background: #741b47; */
@@ -85,7 +84,9 @@ const MiniItem = styled.div`
     opacity: 5;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px) scale(1.2);
+    transform: translateY(-3px);
+
+    /* scale(1.2); */
   }
 `;
 const PriceWrapper = styled.p``;

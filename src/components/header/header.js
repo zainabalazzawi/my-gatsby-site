@@ -24,13 +24,13 @@ export default function Header() {
   );
 }
 const Wrapper = styled.div`
-  position: relative;
+  position: fixed;
   padding: 70px;
   width: 100%;
   display: grid;
   background: #d5a6bd;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
-    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2); */
 `;
 
 const MenuWrapper = styled.div`
@@ -38,6 +38,7 @@ const MenuWrapper = styled.div`
   top: 200px;
   width: 1440px;
   display: grid;
+  gap: 4px;
   grid-template-columns: repeat(3, auto);
   background: #741b47;
 `;
@@ -48,6 +49,7 @@ const MenuItem = styled.div`
   color: #d5a6bd;
   font-size: 17px;
   padding: 10px;
+
   transition: 0.5s ease-out;
   border-radius: 5px;
   :hover {
