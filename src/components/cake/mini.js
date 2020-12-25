@@ -5,24 +5,28 @@ import { Link } from "gatsby";
 const MiniData = [
   {
     title: "Mini Cakes",
+    word: "view",
     img: "/images/mini/mini-1.png",
     price: "price: $20",
     link: "/mini-cakes",
   },
   {
     title: "Chocolate Peanut Butter",
+    word: "view",
     img: "/images/mini/mini-1.png",
     price: "price: $20",
     link: "/chocolate-peanut",
   },
   {
     title: "Caramel Party",
+    word: "view",
     img: "/images/mini/mini-2.png",
     price: "price: $20",
     link: "/caramel-party",
   },
   {
     title: "Mocha Espresso Square",
+    word: "view",
     img: "/images/mini/mini-3.png",
     price: "price: $20",
     link: "/mocha-espresso",
@@ -37,9 +41,9 @@ export default function Mini() {
           <Link to={item.link} key={index}>
             <MiniItem title={item.title}>
               <img src={item.img} alt={item.title} />
-
               {item.title}
               <PriceWrapper>{item.price}</PriceWrapper>
+              <ViewWrapper>{item.word}</ViewWrapper>
             </MiniItem>
           </Link>
         ))}
@@ -60,33 +64,44 @@ const Wrapper = styled.div`
 const MiniWrapper = styled.div`
   position: absolute;
   right: 100px;
-  top: 200px;
+  top: 100px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 15px;
 `;
 const MiniItem = styled.div`
   width: 250px;
-  height: 250px;
+  height: 300px;
   /* color: rgba(255, 255, 255, 0.7); */
   font-size: 17px;
+  font-weight: bold;
   display: grid;
   /* grid-template-columns: auto; */
   align-items: center;
-  padding: 15px;
+  padding: 25px;
+  gap: 10px;
   transition: 0.5s ease-out;
   color: #741b47;
   /* background: #741b47; */
-
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   :hover {
     background: rgba(255, 255, 255);
-    opacity: 5;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
-
     /* scale(1.2); */
   }
 `;
-const PriceWrapper = styled.p``;
+const PriceWrapper = styled.p`
+  font-size: 15px;
+`;
+const ViewWrapper = styled.div`
+  color: #a64d79;
+  width: 80px;
+  padding: 8px;
+  text-align: center;
+  background: #d5a6bd;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+`;

@@ -38,20 +38,17 @@ const MenuWrapper = styled.div`
   top: 200px;
   width: 1440px;
   display: grid;
-  gap: 4px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, auto auto auto);
   background: #741b47;
 `;
 
 const MenuItem = styled.div`
-  width: 150px;
   top: 100px;
   color: #d5a6bd;
   font-size: 17px;
   padding: 10px;
-
   transition: 0.5s ease-out;
-  border-radius: 5px;
+
   :hover {
     color: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),

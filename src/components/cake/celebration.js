@@ -5,24 +5,28 @@ import { Link } from "gatsby";
 const CelebrationData = [
   {
     title: "Celebration Cakes ",
+    word: "view",
     img: "/images/celebration/celebration-1.png",
     price: "price: $20",
     link: "/celebration-cakes ",
   },
   {
-    title: "Milk Chocolate Caramel Cake",
+    title: "Chocolate Caramel Cake",
+    word: "view",
     img: "/images/celebration/celebration-1.png",
     price: "price: $46.99",
     link: "/chocolate-caramel",
   },
   {
     title: "Chocolate Mousse Cake",
+    word: "view",
     img: "/images/celebration/celebration-2.png",
     price: "price: $46.99",
     link: "/chocolate-mousse",
   },
   {
     title: "Lemon Mousse Cake",
+    word: "view",
     img: "/images/celebration/celebration-3.png",
     price: "price: $50.99",
     link: "/lemon-mousse",
@@ -39,6 +43,7 @@ export default function Celebration() {
               <img src={item.img} alt={item.title} />
               {item.title}
               <PriceWrapper>{item.price}</PriceWrapper>
+              <ViewWrapper>{item.word}</ViewWrapper>
             </CelebrationItem>
           </Link>
         ))}
@@ -49,7 +54,7 @@ export default function Celebration() {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 200px;
+  top: 90px;
   width: 100%;
   img {
     width: 200px;
@@ -70,17 +75,18 @@ const CelebrationWrapper = styled.div`
 
 const CelebrationItem = styled.div`
   width: 250px;
-  height: 250px;
+  height: 300px;
   /* color: rgba(255, 255, 255, 0.7); */
   font-size: 17px;
+  font-weight: bold;
   display: grid;
-  /* grid-template-columns: auto; */
+  grid-template-columns: auto;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
   /* border-radius: 10px; */
   transition: 0.5s ease-out;
   color: #741b47;
-
+  gap: 10px;
   /* background: #741b47; */
 
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -93,4 +99,16 @@ const CelebrationItem = styled.div`
   }
 `;
 
-const PriceWrapper = styled.p``;
+const PriceWrapper = styled.p`
+  font-size: 15px;
+`;
+const ViewWrapper = styled.div`
+  color: #a64d79;
+  width: 80px;
+  padding: 8px;
+  text-align: center;
+  background: #d5a6bd;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+`;
