@@ -53,7 +53,7 @@ export default function Mini() {
 }
 
 const Wrapper = styled.div`
-  position: absolute;
+  position: relative;
   top: 500px;
   width: 100%;
   img {
@@ -67,34 +67,6 @@ const MiniWrapper = styled.div`
   top: 100px;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 15px;
-`;
-const MiniItem = styled.div`
-  width: 250px;
-  height: 300px;
-  /* color: rgba(255, 255, 255, 0.7); */
-  font-size: 17px;
-  font-weight: bold;
-  display: grid;
-  /* grid-template-columns: auto; */
-  align-items: center;
-  padding: 25px;
-  gap: 10px;
-  transition: 0.5s ease-out;
-  color: #704313;
-  /* background: #741b47; */
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  :hover {
-    background: rgba(255, 255, 255);
-    border: 1px solid #bd7120;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
-      inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
-    /* scale(1.2); */
-  }
-`;
-const PriceWrapper = styled.p`
-  font-size: 15px;
 `;
 const ViewWrapper = styled.div`
   color: #704313;
@@ -105,4 +77,36 @@ const ViewWrapper = styled.div`
   font-weight: bold;
   font-size: 20px;
   border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  display: none;
+`;
+const MiniItem = styled.div`
+  width: 250px;
+  height: 300px;
+  font-size: 17px;
+  font-weight: bold;
+  display: grid;
+  align-items: center;
+  padding: 25px;
+  transition: 0.5s ease-out;
+  color: #704313;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  :hover {
+    background: rgba(255, 255, 255);
+    border: 1px solid #bd7120;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+      inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    ${ViewWrapper} {
+      display: block;
+    }
+  }
+`;
+const PriceWrapper = styled.p`
+  font-size: 15px;
+  position: relative;
+  /* is that positionc orrect ? */
+  top: -17px;
 `;

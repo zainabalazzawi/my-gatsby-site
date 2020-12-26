@@ -26,15 +26,11 @@ const Wrapper = styled.div`
   background: #e1b472;
   border: 1px solid #bd7120;
 
-  /* border: 1px solid #946013; */
-
   button {
     width: 30px;
     height: 36px;
     background: #e1b472;
     border: 1px solid #bd7120;
-
-    /* border-color: #472f09; */
   }
 
   div {

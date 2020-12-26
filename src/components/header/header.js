@@ -29,14 +29,12 @@ const Wrapper = styled.div`
   width: 100%;
   display: grid;
   background: #704313;
-  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
-    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2); */
 `;
 
 const MenuWrapper = styled.div`
   position: absolute;
   top: 200px;
-  width: 1440px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto auto auto);
   background: #f2b472;
@@ -47,6 +45,7 @@ const MenuItem = styled.div`
   color: #704313;
   font-size: 17px;
   padding: 10px;
+  text-align: center;
   transition: 0.5s ease-out;
 
   :hover {
