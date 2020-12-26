@@ -107,6 +107,6 @@ const MiniItem = styled.div`
 const PriceWrapper = styled.p`
   font-size: 15px;
   position: relative;
-  /* is that positionc orrect ? */
+  /* is that positionc correct ? */
   top: -17px;
 `;
