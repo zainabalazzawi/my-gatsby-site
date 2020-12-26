@@ -24,21 +24,23 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(3, auto);
   display: grid;
   background: #e1b472;
+  border: 1px solid #bd7120;
 
   /* border: 1px solid #946013; */
 
   button {
-    width: 50px;
+    width: 30px;
     height: 36px;
     background: #e1b472;
+    border: 1px solid #bd7120;
 
     /* border-color: #472f09; */
   }
 
   div {
-    text-align: center;
-    width: 400px;
+    width: 440px;
     height: 36px;
+    text-align: center;
   }
 `;
 const QuantityWrapper = styled.h1`
@@ -49,4 +51,5 @@ const QuantityWrapper = styled.h1`
   font-weight: 20px;
   color: #946013;
   padding: 10px;
+  text-align: center;
 `;

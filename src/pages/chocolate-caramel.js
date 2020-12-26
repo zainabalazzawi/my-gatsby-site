@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Counter from "../components/counter/counter";
+import Checkbox from "../components/checkbox/checkbox";
 
-export default function Celebration() {
+export default function Caramel() {
   return (
     <Wrapper>
       <TitleWrapper>
@@ -15,7 +16,7 @@ export default function Celebration() {
       </TextWrapper>
       <img src="/images/celebration/celebration-1.png" alt="celebration" />
       <Counter />
-
+      <Checkbox />
       <p className="information">
         PLEASE WRITE YOUR PERSONALIZED MESSAGE BELOW
       </p>
@@ -50,7 +51,7 @@ const Wrapper = styled.div`
     position: absolute;
     top: 490px;
     right: 220px;
-    color: #946013;
+    color: #704313;
   }
   .order {
     position: absolute;
@@ -59,13 +60,13 @@ const Wrapper = styled.div`
     width: 500px;
     height: 30px;
     background: #e1b472;
-    border-color: #946013;
+    border: 2px solid #bd7120;
   }
 `;
 const TextWrapper = styled.p`
   position: absolute;
-  top: 350px;
-  right: 100px;
+  top: 580px;
+  right: 700px;
   width: 500px;
   line-height: 1.5;
   background: #e1b472;
@@ -83,7 +84,7 @@ const TitleWrapper = styled.h1`
   font-weight: 10px;
   display: grid;
   gap: 10px;
-  color: #946013;
+  color: #704313;
   span {
     font-size: 20px;
   }

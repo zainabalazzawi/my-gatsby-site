@@ -68,7 +68,7 @@ const CelebrationWrapper = styled.div`
   top: 200px;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  border-bottom: 1px solid #741b47;
+  border-bottom: 1px solid #bd7120;
   padding-bottom: 10px;
   gap: 15px;
 `;
@@ -80,18 +80,19 @@ const CelebrationItem = styled.div`
   font-size: 17px;
   font-weight: bold;
   display: grid;
-  grid-template-columns: auto;
+  /* grid-template-columns: auto; */
   align-items: center;
   padding: 25px;
   /* border-radius: 10px; */
   transition: 0.5s ease-out;
-  color: #741b47;
+  color: #704313;
   gap: 10px;
   /* background: #741b47; */
 
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   :hover {
     background: rgba(255, 255, 255, 1);
+    border: 1px solid #bd7120;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
@@ -103,11 +104,12 @@ const PriceWrapper = styled.p`
   font-size: 15px;
 `;
 const ViewWrapper = styled.div`
-  color: #a64d79;
+  color: #704313;
+
   width: 80px;
   padding: 8px;
   text-align: center;
-  background: #d5a6bd;
+  background: #bd7120;
   font-weight: bold;
   font-size: 20px;
   border-radius: 3px;

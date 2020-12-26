@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Counter from "../components/counter/counter";
+import Checkbox from "../components/checkbox/checkbox";
 
-export default function Celebration() {
+export default function Lemon() {
   return (
     <Wrapper>
       <TitleWrapper>
-        Milk Chocolate Caramel Cake
+        Lemon Mousse Cake
         <span> price: $46.99</span>
       </TitleWrapper>
       <TextWrapper>
@@ -17,7 +18,7 @@ export default function Celebration() {
       <img src="/images/celebration/celebration-3.png" alt="celebration" />
 
       <Counter />
-
+      <Checkbox />
       <p className="information">
         PLEASE WRITE YOUR PERSONALIZED MESSAGE BELOW
       </p>
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
   align-items: center;
   img {
     position: absolute;
-    top: 220px;
+    top: 150px;
     right: 700px;
     width: 500px;
   }
@@ -61,13 +62,13 @@ const Wrapper = styled.div`
     width: 500px;
     height: 30px;
     background: #e1b472;
-    border-color: #e1b472;
+    border: 2px solid #bd7120;
   }
 `;
 const TextWrapper = styled.p`
   position: absolute;
-  top: 330px;
-  right: 100px;
+  top: 580px;
+  right: 700px;
   width: 500px;
   line-height: 1.5;
   background: #e1b472;
@@ -80,12 +81,12 @@ const TextWrapper = styled.p`
 const TitleWrapper = styled.h1`
   position: absolute;
   top: 150px;
-  right: 720px;
+  right: 310px;
   font-size: 30px;
   font-weight: 10px;
   display: grid;
   gap: 10px;
-  color: #946013;
+  color: #704313;
   span {
     font-size: 20px;
   }

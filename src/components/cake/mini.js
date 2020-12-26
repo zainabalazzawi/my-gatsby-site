@@ -81,11 +81,12 @@ const MiniItem = styled.div`
   padding: 25px;
   gap: 10px;
   transition: 0.5s ease-out;
-  color: #741b47;
+  color: #704313;
   /* background: #741b47; */
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   :hover {
     background: rgba(255, 255, 255);
+    border: 1px solid #bd7120;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
@@ -96,11 +97,11 @@ const PriceWrapper = styled.p`
   font-size: 15px;
 `;
 const ViewWrapper = styled.div`
-  color: #a64d79;
+  color: #704313;
   width: 80px;
   padding: 8px;
   text-align: center;
-  background: #d5a6bd;
+  background: #bd7120;
   font-weight: bold;
   font-size: 20px;
   border-radius: 3px;

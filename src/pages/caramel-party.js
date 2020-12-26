@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Counter from "../components/counter/counter";
+import Checkbox from "../components/checkbox/checkbox";
 
-export default function Celebration() {
+export default function Cupcake() {
   return (
     <Wrapper>
       <TitleWrapper>
@@ -16,10 +17,14 @@ export default function Celebration() {
       <img src="/images/mini/mini-2.png" alt="mini" />
 
       <Counter />
-      <p className="information">
-        PLEASE WRITE YOUR PERSONALIZED MESSAGE BELOW
-      </p>
-      <input type="text" className="message" />
+      <Checkbox />
+
+      <label>
+        <p className="information">
+          PLEASE WRITE YOUR PERSONALIZED MESSAGE BELOW
+        </p>
+        <input type="text" className="message" />
+      </label>
       <button type="button" className="order">
         Order
       </button>
@@ -49,8 +54,9 @@ const Wrapper = styled.div`
   .information {
     position: absolute;
     top: 490px;
-    right: 220px;
+    right: 240px;
     color: #946013;
+    font-size: 15px;
   }
   .order {
     position: absolute;
@@ -59,13 +65,13 @@ const Wrapper = styled.div`
     width: 500px;
     height: 30px;
     background: #e1b472;
-    border-color: #e1b472;
+    border: 2px solid #bd7120;
   }
 `;
 const TextWrapper = styled.p`
   position: absolute;
-  top: 350px;
-  right: 100px;
+  top: 580px;
+  right: 700px;
   width: 500px;
   line-height: 1.5;
   background: #e1b472;
@@ -83,7 +89,7 @@ const TitleWrapper = styled.h1`
   font-weight: 10px;
   display: grid;
   gap: 10px;
-  color: #946013;
+  color: #704313;
   span {
     font-size: 20px;
   }
