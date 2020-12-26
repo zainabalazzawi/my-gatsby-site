@@ -73,6 +73,21 @@ const CelebrationWrapper = styled.div`
   gap: 15px;
 `;
 
+const ViewWrapper = styled.div`
+  color: #704313;
+  width: 80px;
+  padding: 8px;
+  text-align: center;
+  background: #bd7120;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  display: none;
+`;
+
 const CelebrationItem = styled.div`
   width: 250px;
   height: 300px;
@@ -88,8 +103,9 @@ const CelebrationItem = styled.div`
   color: #704313;
   gap: 10px;
   /* background: #741b47; */
-
+  position: relative;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
   :hover {
     background: rgba(255, 255, 255, 1);
     border: 1px solid #bd7120;
@@ -97,20 +113,14 @@ const CelebrationItem = styled.div`
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
     /* scale(1.2) */
+    ${ViewWrapper}  {
+      display: block;
+    }
   }
 `;
+
 
 const PriceWrapper = styled.p`
   font-size: 15px;
 `;
-const ViewWrapper = styled.div`
-  color: #704313;
 
-  width: 80px;
-  padding: 8px;
-  text-align: center;
-  background: #bd7120;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 3px;
-`;
