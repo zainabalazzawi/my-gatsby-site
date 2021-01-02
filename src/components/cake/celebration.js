@@ -113,6 +113,6 @@ const CelebrationItem = styled.div`
 const PriceWrapper = styled.p`
   font-size: 15px;
   position: relative;
-  /* is that positionc correct ? */
+  /* is that position correct ? */
   top: -17px;
 `;

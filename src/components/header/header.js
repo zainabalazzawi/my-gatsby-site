@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import Form from "../form/form";
 
 const menuData = [
   { title: "Home", link: "/home" },
@@ -8,8 +9,16 @@ const menuData = [
   { title: "Your order", link: "/your order" },
 ];
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleClick(event) {
+    setIsOpen(!isOpen);
+    event.preventDefault();
+  }
   return (
-    <Wrapper>
+    <Wrapper onClick={(event) => handleClick(event)}>
+      <Form isOpen={isOpen} />
+
       <Title>
         candy <span>&</span> cake
       </Title>
@@ -27,21 +36,22 @@ const Wrapper = styled.div`
   position: fixed;
   padding: 70px;
   width: 100%;
+  height: 285px;
   display: grid;
   background: #704313;
 `;
 
 const MenuWrapper = styled.div`
   position: absolute;
-  top: 200px;
+  top: 250px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, auto auto auto);
+  grid-template-columns: repeat(4, auto auto auto);
   background: #f2b472;
 `;
 
 const MenuItem = styled.div`
-  top: 100px;
+  top: 200px;
   color: #704313;
   font-size: 17px;
   padding: 10px;
