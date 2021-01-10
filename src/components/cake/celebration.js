@@ -54,7 +54,6 @@ export default function Celebration() {
 
 const Wrapper = styled.div`
   position: relative;
-  top: 90px;
   width: 100%;
   img {
     width: 200px;
@@ -65,7 +64,7 @@ const Wrapper = styled.div`
 const CelebrationWrapper = styled.div`
   position: absolute;
   right: 100px;
-  top: 200px;
+  top: 15px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   border-bottom: 1px solid #bd7120;

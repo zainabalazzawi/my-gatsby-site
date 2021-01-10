@@ -54,7 +54,6 @@ export default function Mini() {
 
 const Wrapper = styled.div`
   position: relative;
-  top: 500px;
   width: 100%;
   img {
     width: 200px;
@@ -62,9 +61,9 @@ const Wrapper = styled.div`
   }
 `;
 const MiniWrapper = styled.div`
-  position: absolute;
   right: 100px;
-  top: 100px;
+  top: 300px;
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(4, auto);
 `;

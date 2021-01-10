@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Counter from "../components/counter/counter";
 import Checkbox from "../components/checkbox/checkbox";
-
+import { Link } from "gatsby";
 export default function Mocha() {
   return (
     <Wrapper>
@@ -24,9 +24,11 @@ export default function Mocha() {
         PLEASE WRITE YOUR PERSONALIZED MESSAGE BELOW
       </p>
       <input type="text" className="message" />
-      <button type="button" className="order">
-        Order
-      </button>
+      <Link to="../shipping">
+        <button type="button" className="order">
+          Order Now
+        </button>
+      </Link>
     </Wrapper>
   );
 }
